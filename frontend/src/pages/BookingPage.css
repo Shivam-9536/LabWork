@@ -339,3 +339,71 @@
     width: 100%;
   }
 }
+/* Customer Details */
+
+.customer-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.customer-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.customer-field label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.customer-field input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 15px;
+  border: 1px solid #d7deea;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  background: white;
+}
+
+.customer-field input:focus {
+  border-color: #2864e8;
+  box-shadow: 0 0 0 3px rgba(40, 100, 232, 0.08);
+}
+
+
+/* Error */
+
+.booking-error {
+  margin-top: 16px;
+  padding: 13px 16px;
+  border: 1px solid #fecaca;
+  background: #fff1f2;
+  color: #b91c1c;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+
+/* Disabled button */
+
+.request-btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+  .customer-details-grid {
+    grid-template-columns: 1fr;
+  }
+
+}

@@ -524,3 +524,32 @@
     display: none;
   }
 }
+.form-success {
+  margin-top: 15px;
+  padding: 14px 18px;
+  background: #dcfce7;
+  border: 1px solid #bbf7d0;
+  color: #166534;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.form-error {
+  margin-top: 15px;
+  padding: 14px 18px;
+  background: #fee2e2;
+  border: 1px solid #fecaca;
+  color: #b91c1c;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+}
+.worker-login a {
+  color: #2563eb;
+  font-weight: 800;
+  text-decoration: none;
+  margin-left: 5px;
+}

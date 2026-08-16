@@ -2,7 +2,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import BookingPage from "./pages/BookingPage";
 import WorkerMatchingPage from "./pages/WorkerMatchingPage";
 import WorkerRegistrationPage from "./pages/WorkerRegistrationPage";
+import WorkerDashboard from "./pages/WorkerDashboard";
 import "./App.css";
+import WorkerLoginPage from "./pages/WorkerLoginPage";
+import BookingStatusPage from "./pages/BookingStatusPage";
 
 function HomePage() {
   return (
@@ -455,7 +458,18 @@ function App() {
           path="/worker/register"
           element={<WorkerRegistrationPage />}
         />
-
+        <Route
+  path="/worker/login"
+  element={<WorkerLoginPage />}
+/>
+       <Route
+  path="/worker/dashboard"
+  element={<WorkerDashboard />}
+/>
+<Route
+  path="/booking-status"
+  element={<BookingStatusPage />}
+/>
       </Routes>
 
     </BrowserRouter>

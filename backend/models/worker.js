@@ -25,6 +25,11 @@ const workerSchema = new mongoose.Schema(
       type: Number
     },
 
+    password: {
+      type: String,
+      required: true
+    },
+
     skills: {
       type: [String],
       required: true
@@ -47,12 +52,20 @@ const workerSchema = new mongoose.Schema(
 
     verificationStatus: {
       type: String,
+      enum: [
+        "pending",
+        "approved",
+        "rejected"
+      ],
       default: "pending"
     }
   },
+
   {
     timestamps: true
   }
 );
 
-module.exports = mongoose.model("Worker", workerSchema);
+module.exports =
+  mongoose.models.Worker ||
+  mongoose.model("Worker", workerSchema);
